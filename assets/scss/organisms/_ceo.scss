@@ -1,0 +1,103 @@
+.mt-ceo {
+    padding: 40px 0;
+
+    &__line {
+        text-align: center;
+        margin-right: 19%;
+        margin-top: -25px;
+        margin-bottom: 40px;
+    }
+    &__out {
+        display: flex;
+        align-items: center;
+        &__right {
+            width: 30%;
+            height: auto;
+            padding: 40px 0;
+            z-index: 2;
+           
+            &__img {
+                position: relative;
+                margin-right: -50%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        &__left {
+            width: 100%;
+    
+        }
+    }   
+}
+
+@include tablet-pro{
+    .mt-ceo {
+        &__line {
+            text-align: center;
+            margin-right: 24%;
+            margin-top: -25px;
+        }
+    }
+}
+
+
+@include tablet {
+    .mt-ceo {
+        &__line {
+            text-align: center;
+            margin-right: 31%;
+            margin-top: -25px;
+        }
+        &__out {
+            flex-direction: column;
+            align-items: center;
+            &__right {
+                width: 50%;
+                height: auto;
+                padding:  0;
+               
+                &__img {
+                    width: 100%;
+                    position: unset;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+           
+        }   
+    }
+}
+
+@include mobile {
+    .mt-ceo {
+        &__line {
+            text-align: center;
+            margin-right: 60%;
+            margin-top: -25px;
+        }
+        &__out {
+            flex-direction: column;
+            align-items: center;
+            &__right {
+                width: 100%;
+                height: auto;
+                padding:  0;
+               
+                &__img {
+                    width: 100%;
+                    position: unset;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+           
+        }   
+    }
+}
