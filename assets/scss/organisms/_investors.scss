@@ -1,0 +1,27 @@
+.mtr-investots {
+    padding: 40px 0;
+
+    .mtr-title__line {
+        width: 46%;
+    }
+
+    &__out {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -16px;
+    }
+
+    &__tile {
+        width: calc(50% - 32px);
+        margin: 0 16px;
+        margin-bottom: 32px;
+    }
+}
+
+@include mobile {
+    .mtr-investots {
+        &__tile {
+            width: calc(100% - 32px);
+        }
+    }
+}
