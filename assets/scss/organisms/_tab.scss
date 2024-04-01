@@ -1,5 +1,8 @@
 .mtr-tabs {
     padding: 0;
+    .nav-link {
+        color: var(--clr-blue2);
+    }
 
     &__head {
         position: sticky;
@@ -78,9 +81,9 @@
 
 }
 
-.nav-pills .nav-link.active {
-    font-weight: bold;
-}
+// .nav-pills .nav-link.active {
+//     font-weight: bold;
+// }
 
 .nav {
     justify-content: center;
