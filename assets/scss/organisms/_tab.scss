@@ -6,43 +6,51 @@
         top: 0;
         background-color: #fff;
     }
-    table, th, td {
+
+    table,
+    th,
+    td {
         border: 1px solid rgb(158, 158, 158);
         border-collapse: collapse;
-      }
+    }
 
-      table {
+    table {
         background-color: #fff;
         width: 100%;
-      }
-      th {
+    }
+
+    th {
         background-color: rgb(185, 180, 180);
         color: black;
         font-weight: 800;
-        
-      }
 
-      &__tab2 {
+    }
+
+    &__tab2 {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-      }
-      &__img {
+    }
+
+    &__img {
         width: 20%;
         box-shadow: 25px 10px white;
+
         img {
             width: 100%;
         }
-      }
-      .a {
+    }
+
+    .a {
         background-color: #0098DF;
         display: flex;
         justify-content: space-between;
         padding: 0 30px;
-      }
-      p {
+    }
+
+    p {
         color: white;
-      }
+    }
 }
 
 
@@ -67,6 +75,11 @@
 
 .nav-pills .nav-link {
     border-radius: 0;
+
+}
+
+.nav-pills .nav-link.active {
+    font-weight: bold;
 }
 
 .nav {
@@ -114,16 +127,26 @@
 .left-arrow {
     order: 1;
     position: absolute;
-    left: 0;
-    top: 15px;
+    left: 8px;
+    top: 18px;
+
+    img {
+        transform: rotate(180deg);
+        width: 18px;
+    }
 }
 
 .right-arrow {
     order: 2;
     position: absolute;
-    right: 0;
-    top: 15px;
+    right: 8px;
+    top: 18px;
+    height: 20px;
+    width: 20px;
 
+    img {
+        width: 18px;
+    }
 }
 
 /* media query */
@@ -141,6 +164,7 @@
     .tabs-sub {
         overflow: hidden;
     }
+
     .nav-item {
         width: 100%;
         border-spacing: 20px;
@@ -161,6 +185,7 @@
         // display: block;
         // width: 400%;
     }
+
     .mtr-tab-tile {
         height: 250px;
         overflow: auto;
