@@ -64,19 +64,3 @@ prevArrow.addEventListener('click', () => {
 window.addEventListener('resize', () => {
     showTabs();
 });
-
-
-//scroll tile 
-
-const Qtile = document.querySelectorAll(".mtr-tab-tile"); 
-const Inner = document.getElementById("inner-sec");
-
-    // if(Inner.length > 5) {
-    //     Qtile.classList.add("mt-scroll");
-    // }
-
-Qtile.forEach(() => {
-    if(Qtile.style.height < 300) {
-        Qtile.classList.add("mt-scroll");
-    }
-}) 
