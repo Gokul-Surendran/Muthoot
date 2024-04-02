@@ -1,19 +1,23 @@
 .related-policies-tile {
-  width: 278px;
+  width: calc(25% - 20px);
+  margin: 10px;
   padding: 20px 15px 20px 20px;
   border: 1px solid var(--clr-blue2);
   border-radius: 5px;
   cursor: pointer;
-  h1 {
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--clr-blue);
+  &__tittle {
+    height: 50px;
+    h1 {
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--clr-blue);
+    }
   }
   &__bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 20px;
     button {
       color: var(--clr-white);
       background-color: var(--clr-blue2);
@@ -40,5 +44,23 @@
         fill: var(--clr-white);
       }
     }
+  }
+}
+
+@include mobile {
+  .related-policies-tile {
+    width: calc(100% - 20px);
+  }
+}
+
+@include tablet {
+  .related-policies-tile {
+    width: calc(50% - 20px);
+  }
+}
+
+@include tablet-pro {
+  .related-policies-tile {
+    width: calc(33.3333% - 20px);
   }
 }
