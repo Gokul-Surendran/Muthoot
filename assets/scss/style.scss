@@ -8,6 +8,7 @@
 @import "./base/dev";
 
 // atoms
+
 @import "atoms/title";
 @import "atoms/dropdown";
 // molecule
@@ -17,6 +18,7 @@
 @import "molecules/related-policies";
 // organisms
 @import "organisms/grp_init";
+@import "organisms/nav-tab";
 @import "organisms/ceo";
 @import "molecules/investor-tile";
 @import "molecules/keystats-tile";
