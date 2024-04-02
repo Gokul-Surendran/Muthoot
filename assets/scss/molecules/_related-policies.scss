@@ -1,0 +1,44 @@
+.related-policies-tile {
+  width: 278px;
+  padding: 20px 15px 20px 20px;
+  border: 1px solid var(--clr-blue2);
+  border-radius: 5px;
+  cursor: pointer;
+  h1 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--clr-blue);
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    button {
+      color: var(--clr-white);
+      background-color: var(--clr-blue2);
+      padding: 8px 29px;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 11px;
+    }
+    svg {
+      width: 45px;
+    }
+  }
+  &:hover {
+    background-color: var(--clr-blue2);
+    h1 {
+      color: var(--clr-white);
+    }
+    button {
+      background-color: var(--clr-white);
+      color: var(--clr-blue2);
+    }
+    svg {
+      path {
+        fill: var(--clr-white);
+      }
+    }
+  }
+}
