@@ -1,0 +1,25 @@
+.mtr-statictab {
+    .nav-item {
+        width: 25%;
+        .nav-link {
+            width: 100%;
+            position: relative;
+            padding: 16px;
+            border-radius: 0;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 2px;
+                height: 80%;
+                right: 0;
+                top: 10%;
+                background-color: var(--clr-blue2);
+            }
+        }
+    }
+    .nav-pills {
+        // padding: 16px 0;
+        // border-top: 1px solid var(--clr-blue2);
+        // border-bottom: 1px solid var(--clr-blue2);
+    }
+}

@@ -9,8 +9,19 @@
 
 // atoms
 
+@import "atoms/title";
+@import "atoms/dropdown";
 // molecule
-
+@import "molecules/ceo_para";
+@import "molecules/quater-tile";
 // organisms
 @import "organisms/nav-tab"
+@import "organisms/ceo";
+@import "molecules/investor-tile";
+@import "molecules/keystats-tile";
+@import "organisms/investors";
+@import "organisms/key-stats";
+@import "organisms/static-tab";
+@import "organisms/tab-format";
+@import "organisms/tab";
 // pages
