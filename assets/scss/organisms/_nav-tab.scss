@@ -1,27 +1,26 @@
 .mtr-appch {
    padding: 16px 0px;
+   margin-top: 50px;
    background-color: #f7fcfe;
    &__nav {
-      justify-content: space-between;
-      border-bottom: 1px solid #000000;
+      justify-content: space-between !important;
+      border-bottom: 1px solid #000000 !important;
       padding-top: 16px;
    }
-   &__copy {
-      p {
+   &__copy { 
          font-size: 20px;
          font-weight: 400;
          padding-bottom: 8px;
          color: #4B4947; 
          text-align: center;
-      }
    }
    &__link {
       font-size: 25px;
       font-weight: 500;
-      color: #6c6d6e;
+      color: #6c6d6e !important;
       border: 0 !important;
       &:hover {
-         color: #0098DF;
+         color: #0098DF !important;
       }
       &.active {
          color: #0098DF !important;
