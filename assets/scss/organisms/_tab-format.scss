@@ -166,6 +166,32 @@
     }
     }
 
+    .mtr-trustee{
+        padding-top: 50px;
+
+        &__nav{
+            justify-content: space-evenly;
+            border-bottom: 1px solid #000000;
+        }
+
+        &__navhead{
+            font-size: 25px;
+            font-weight: 700;
+            color: #333333;
+            border: 0;
+            &.active{
+                background-color: #E7F6FC;
+                color: #0098DF;
+                border-bottom: 5px solid #0098DF;
+            }
+        }
+
+        &__tiles{
+            justify-content: space-evenly;
+
+        }
+    }
+
    
 }
 
