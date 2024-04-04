@@ -167,11 +167,12 @@
     }
 
     .mtr-trustee{
-        padding-top: 50px;
+        padding-top: 40px;
 
         &__nav{
-            justify-content: space-evenly;
+            justify-content: space-between;
             border-bottom: 1px solid #000000;
+            margin: 0px 40px;
         }
 
         &__navhead{
@@ -180,7 +181,7 @@
             color: #333333;
             border: 0;
             &.active{
-                background-color: #E7F6FC;
+                background-color: transparent;
                 color: #0098DF;
                 border-bottom: 5px solid #0098DF;
             }
