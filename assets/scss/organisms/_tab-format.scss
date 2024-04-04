@@ -193,6 +193,29 @@
         }
     }
 
+    @include mobile{
+        .mtr-trustee{
+            padding-top: 20px;
+
+            &__navhead{
+                font-size: 18px;
+            }
+
+            &__tiles{
+                flex-direction: column;
+                align-content: center;
+                padding: 20px 0px;
+            }
+
+            &__tile{
+                width: 80%;
+                h1{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
    
 }
 
