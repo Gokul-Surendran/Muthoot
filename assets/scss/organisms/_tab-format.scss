@@ -216,6 +216,31 @@
         }
     }
 
+    @include tablet{
+        .mtr-trustee{
+            &__nav{
+                justify-content: space-between;
+            }
+
+            &__tiles{
+                flex-direction: row;
+            }
+
+            &__navhead{
+                font-size: 15px;
+            }
+        }
+    }
+
+    @include tablet-pro{
+        .mtr-trustee{
+            &__nav{
+                justify-content: center;
+                border-bottom: 0;
+            }
+        }
+    }
+
    
 }
 
