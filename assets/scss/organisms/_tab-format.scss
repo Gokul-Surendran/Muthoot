@@ -213,6 +213,10 @@
                 h1{
                     font-size: 17px;
                 }
+
+                p{
+                    font-size: 15px;
+                }
             }
         }
     }
@@ -220,7 +224,9 @@
     @include tablet{
         .mtr-trustee{
             &__nav{
-                justify-content: space-between;
+                justify-content: space-around;
+                border-bottom: 0;
+                margin: 0px 40px;
             }
 
             &__tiles{
@@ -228,7 +234,16 @@
             }
 
             &__navhead{
-                font-size: 15px;
+                font-size: 20px;
+            }
+
+            &__tile{
+                h1{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 15px;
+                }
             }
         }
     }
@@ -236,8 +251,21 @@
     @include tablet-pro{
         .mtr-trustee{
             &__nav{
-                justify-content: center;
-                border-bottom: 0;
+                justify-content: space-between;
+                margin: 0px 30px;
+            }
+
+            &__navhead{
+                font-size: 22px;
+            }
+
+            &__tile{
+                h1{
+                    font-size: 19px;
+                }
+                p{
+                    font-size: 17px;
+                }
             }
         }
     }
