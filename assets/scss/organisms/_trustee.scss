@@ -1,0 +1,108 @@
+// Trustee Compliance Nav-tab styling starts here
+.mtr-trustee{
+    padding-top: 40px;
+
+    &__nav{
+        justify-content: space-between;
+        border-bottom: 1px solid #000000;
+        margin: 0px 40px;
+    }
+
+    &__navhead{
+        font-size: 25px;
+        font-weight: 700;
+        color: #333333;
+        border: 0 !important;
+        &.active{
+            background-color: transparent !important;
+            color: #0098DF !important;
+            border-bottom: 5px solid #0098DF !important;
+        }
+        &:hover{
+            color: #0098DF !important;
+        }
+    }
+
+    &__tiles{
+        justify-content: space-evenly;
+
+    }
+}
+
+@include mobile{
+    .mtr-trustee{
+        padding-top: 20px;
+
+        &__navhead{
+            font-size: 18px;
+        }
+
+        &__tiles{
+            flex-direction: column;
+            align-content: center;
+            padding: 20px 0px;
+        }
+
+        &__tile{
+            width: 80%;
+            h1{
+                font-size: 17px;
+            }
+
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@include tablet{
+    .mtr-trustee{
+        &__nav{
+            justify-content: space-around;
+            border-bottom: 0;
+            margin: 0px 40px;
+        }
+
+        &__tiles{
+            flex-direction: row;
+        }
+
+        &__navhead{
+            font-size: 20px;
+        }
+
+        &__tile{
+            h1{
+                font-size: 18px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@include tablet-pro{
+    .mtr-trustee{
+        &__nav{
+            justify-content: space-between;
+            margin: 0px 30px;
+        }
+
+        &__navhead{
+            font-size: 22px;
+        }
+
+        &__tile{
+            h1{
+                font-size: 19px;
+            }
+            p{
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+// Trustee Compliance Nav-tab styling ends here
