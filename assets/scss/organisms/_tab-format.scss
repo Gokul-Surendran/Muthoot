@@ -75,23 +75,6 @@
             margin: 0 16px 50px;
             position: relative;
 
-            &:hover {
-                .mtr-tabFormat__annual-rprt-right-sub2 {
-                    background-color: var(--clr-blue2);
-
-                    p {
-                        color: var(--clr-white);
-                    }
-
-                    svg {
-                        path {
-                            transition: 0.3s;
-                            fill: #fff;
-                        }
-                    }
-
-                }
-            }
 
             &::after {
                 content: '';
@@ -132,7 +115,6 @@
                 border-bottom-left-radius: 5px;
                 border-bottom-right-radius: 5px;
                 // background-color: rgba(0, 152, 223, 1);
-                padding: 16px 24px;
                 height: auto;
                 background-color: #fff;
                 width: 100%;
@@ -141,6 +123,68 @@
                 justify-content: center;
                 min-height: 90px;
                 transition: 0.3s;
+            }
+
+            a {
+                padding: 16px 24px;
+                transition: 0.3s;
+                color: rgba(0, 152, 223, 1);
+                font-weight: 500;
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                // padding: 0 20px;
+
+                svg {
+                    path {
+                        transition: 0.3s;
+                        fill: #0098DF;
+                    }
+                }
+
+                p {
+                    padding-right: 35px;
+                    color: rgba(0, 152, 223, 1);
+                }
+            }
+
+            &:hover {
+                .mtr-tabFormat__annual-rprt-right-sub2 {
+                    background-color: rgba(0, 152, 223, 1);
+                    transition: 0.3s;
+
+                    a {
+                        transition: 0.3s;
+
+                        p {
+                            color: #fff;
+                        }
+
+                        svg {
+                            path {
+                                transition: 0.3s;
+                                fill: #fff;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #fff;
+                border-radius: 5px;
+                left: 16px;
+                top: 16px;
+                z-index: 0;
+            }
+
+            img {
+                width: 100%;
             }
 
             a {
@@ -164,34 +208,17 @@
                     color: var(--clr-blue2);
                 }
             }
-
-            // &:hover {
-            //     .inner__right__sub2 {
-            //         background-color: rgba(0, 152, 223, 1);
-            //         transition: 0.3s;
-
-            //         a {
-            //             transition: 0.3s;
-            //             color: #fff;
-
-            //             svg {
-            //                 path {
-            //                     transition: 0.3s;
-            //                     fill: #fff;
-            //                 }
-            //             }
-            //         }
-            //     }
-            // }
         }
     }
 
+    // Trustee Compliance Nav-tab styling starts here
     .mtr-trustee {
-        padding-top: 50px;
+        padding-top: 40px;
 
         &__nav {
-            justify-content: space-evenly;
+            justify-content: space-between;
             border-bottom: 1px solid #000000;
+            margin: 0px 40px;
         }
 
         &__navhead {
@@ -201,7 +228,7 @@
             border: 0;
 
             &.active {
-                background-color: #E7F6FC;
+                background-color: transparent;
                 color: #0098DF;
                 border-bottom: 5px solid #0098DF;
             }
@@ -214,18 +241,62 @@
     }
 
 
+    @include tablet-pro {
+        .mtr-trustee {
+            &__nav {
+                justify-content: center;
+                border-bottom: 0;
+            }
+        }
+    }
+
+    @include tablet {
+        .mtr-trustee {
+            &__nav {
+                justify-content: space-between;
+            }
+
+            &__tiles {
+                flex-direction: row;
+            }
+
+            &__navhead {
+                font-size: 15px;
+            }
+        }
+    }
+
+    @include mobile {
+        .mtr-trustee {
+            padding-top: 20px;
+
+            &__navhead {
+                font-size: 18px;
+            }
+
+            &__tiles {
+                flex-direction: column;
+                align-content: center;
+                padding: 20px 0px;
+            }
+
+            &__tile {
+                width: 80%;
+
+                h1 {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+    // Trustee Compliance Nav-tab styling ends here
 }
 
 @include tablet-pro {
     .mtr-tabFormat {
-        &__annual-rprt {
-
-            padding: 40px 10px;
-
-            &-right {
-                width: calc(40% - 16px);
-                margin: 0;
-            }
+        &__annual-rprt-right {
+            width: calc(40% - 32px);
         }
     }
 }
@@ -242,19 +313,19 @@
             }
         }
 
-        &__annual-rprt {
-
-            padding: 40px 10px;
-
-            &-right {
-                width: calc(50% - 16px);
-                margin: 0;
-            }
-        }
-
         &__finance-rslt {
             &-outer {
                 padding: 40px 32px;
+            }
+        }
+
+        &__annual-rprt-right {
+            width: calc(45% - 32px);
+
+            a {
+                p {
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -280,18 +351,16 @@
             }
         }
 
-        &__annual-rprt {
-
-            padding: 40px 10px;
-
-            &-right {
-                width: calc(90% - 16px);
-                margin: 0;
-            }
-        }
-
         .mtr-dropdown {
             width: 80%;
+        }
+
+        &__annual-rprt {
+            flex-direction: column;
+
+            &-right {
+                width: calc(100% - 32px);
+            }
         }
     }
 }
