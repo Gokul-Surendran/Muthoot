@@ -8,18 +8,27 @@
 @import "./base/dev";
 
 // atoms
+
 @import "atoms/title";
 @import "atoms/dropdown";
 // molecule
 @import "molecules/ceo_para";
 @import "molecules/quater-tile";
+@import "molecules/5year-financial";
+@import "molecules/related-policies";
 // organisms
+@import "organisms/grp_init";
+@import "organisms/nav-tab";
 @import "organisms/ceo";
 @import "molecules/investor-tile";
 @import "molecules/keystats-tile";
 @import "organisms/investors";
 @import "organisms/key-stats";
-@import "organisms/static-tab";
 @import "organisms/tab-format";
 @import "organisms/tab";
+@import "organisms/banks-funders";
+@import "organisms/coroporate-cards";
+@import "organisms/related-policies";
+@import "organisms/corporate-top";
+@import "organisms/newsletter";
 // pages
