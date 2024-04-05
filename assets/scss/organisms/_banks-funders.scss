@@ -1,16 +1,17 @@
 .mt-banks {
     display: flex;
     // width: calc(20% - 16px);
-    padding: 40px 0;
+    // padding: 40px 0;
     flex-wrap: wrap;
     justify-content: space-evenly;
 
     &__sub {
-        box-shadow: 4px 3px 7px 0 #0098DF66; 
+        box-shadow: 4px 3px 7px 0 #0098DF66;
         border: 1px solid #fff;
         border-radius: 5px;
         width: calc(25% - 32px);
         margin: 16px;
+
         img {
             width: 100%;
         }

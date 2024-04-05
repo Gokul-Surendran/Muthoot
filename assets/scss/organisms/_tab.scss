@@ -1,6 +1,10 @@
 .mtr-tabs {
     padding: 0;
 
+    &__tabpane {
+        padding: 40px 0;
+    }
+
     .nav-link {
         color: var(--clr-blue2);
         min-height: 60px;
@@ -162,7 +166,21 @@
     }
 }
 
+@include tablet {
+    .mtr-tabs {
+        .nav-link {
+            min-height: 100px;
+        }
 
+        .left-arrow {
+            top: 40px;
+        }
+
+        .right-arrow {
+            top: 40px;
+        }
+    }
+}
 
 
 /* media query */

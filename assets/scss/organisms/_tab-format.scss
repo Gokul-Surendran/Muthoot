@@ -218,6 +218,22 @@
             width: calc(40% - 32px);
         }
     }
+
+
+}
+
+@include tablet-pro {
+    .mtr-tabFormat {
+        &__annual-rprt {
+
+            padding: 40px 10px;
+
+            &-right {
+                width: calc(40% - 16px);
+                margin: 0;
+            }
+        }
+    }
 }
 
 @include tablet {
@@ -229,6 +245,16 @@
         &__year {
             &::after {
                 width: 20%;
+            }
+        }
+
+        &__annual-rprt {
+
+            padding: 40px 10px;
+
+            &-right {
+                width: calc(50% - 16px);
+                margin: 0;
             }
         }
 
@@ -267,6 +293,16 @@
 
             .mtr-tab-tile {
                 width: calc(100% - 40px);
+            }
+        }
+
+        &__annual-rprt {
+
+            padding: 40px 10px;
+
+            &-right {
+                width: calc(90% - 16px);
+                margin: 0;
             }
         }
 
