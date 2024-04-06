@@ -1,0 +1,25 @@
+.offerdoc-accordion {
+
+    &__acc-btn {
+        color: #fff !important;
+        background-color: var(--clr-blue2) !important;
+        box-shadow: none !important;
+        font-weight: 600;
+    }
+
+    .accordion-button:not(.collapsed){
+        background-color: #fff !important;
+        color: var(--clr-blue2) !important;
+        font-weight: 600;
+    }
+
+    .accordion-button::after {
+        background-image: url('../../../assets/images/acc-plus.png');
+        
+        background-size: 1rem;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        background-image: url('../../../assets/images/acc-minus.png') !important;
+    }
+}
