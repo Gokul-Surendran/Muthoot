@@ -3,7 +3,7 @@
 
     &__srcoll {
         overflow-y: scroll;
-        height: 358px;
+        height: 600px;
         &::-webkit-scrollbar {
             width: 3px;
         }
@@ -21,7 +21,7 @@
         color: var(--clr-blue2) !important;
     }
 
-    &__gap,&__heading {
+    &__heading {
         border: 0 !important;
         td {
             background-color: transparent !important;
@@ -37,7 +37,6 @@
             color: var(--clr-blue) !important;
         }
     }
-
 
     table, th, td {
         border: 1px solid #C7C7C7;
@@ -82,6 +81,7 @@
             width: 11.6%;
             font-weight: 400;
             color: #4B4947;
+            padding: 20px;
             &:first-child {
                 width: 30%;
             }
@@ -92,7 +92,7 @@
         }
  }
 }
-      
+
 /* media query */
 @include mobile {
     .mtr-table {
