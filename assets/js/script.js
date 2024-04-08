@@ -64,3 +64,16 @@ prevArrow.addEventListener('click', () => {
 window.addEventListener('resize', () => {
     showTabs();
 });
+
+// JavaScript to make header sticky after 5 scrolls
+window.addEventListener('scroll', function () {
+    var table = document.getElementById('myTable');
+    var headers = table.getElementsByClassName('sticky-header')[0];
+    var scrollPos = window.scrollY;
+    var contentHeight = table.getBoundingClientRect().height;
+    if (scrollPos > 5 * contentHeight) {
+        headers.classList.add('sticky-header-scroll');
+    } else {
+        headers.classList.remove('sticky-header-scroll');
+    }
+});
