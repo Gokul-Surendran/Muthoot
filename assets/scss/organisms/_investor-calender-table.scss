@@ -1,5 +1,103 @@
 .mtr-dropdown-outer {
     display: flex;
     gap: 20px;
+    //  &__inner {
+    //     width: auto;
+    //  }
+    select {
+        width: auto;
+    }
+}
+.mtr-table2 {
+    padding: 30px 20px;
+    
+    
 
+    // &__gap,&__heading {
+    //     border: 0 !important;
+    //     td {
+    //         background-color: transparent !important;
+    //         border: 0 !important;
+    //     }
+    // }
+
+    // &__heading {
+    //     font-size: 20px;
+    //     td {
+    //         padding: 32px 0 16px 0 !important;
+    //         padding-left: 0 !important;
+    //         color: var(--clr-blue) !important;
+    //     }
+    // }
+
+
+    table, th, td {
+        border: 1px solid #0098DF;
+        border-collapse: collapse;
+        // margin-top: 30px;
+        padding: 20px;
+      }
+    //   &__heading {
+    //     position: sticky;
+    //   }
+      table {
+        background-color: transparent;
+        width: 100%;
+        position: relative;
+        border-collapse: collapse; 
+        
+        // tr {
+        //     &:first-child {
+        //         position: fixed;
+        //         left: 0;
+        //         top: 0;
+        //     }
+        // }
+        th,td {
+            vertical-align: middle;
+            text-align: center;
+            background-color: var(--clr-white);
+            &:first-child {
+                text-align: center;
+                padding-left: 24px ;
+            }
+        }
+
+        th {
+            background-color: #0098DF;
+            color: var(--clr-white);
+            text-align: center;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+            border-right: 1px solid #fff;
+            padding: 16px;
+            
+          }
+        td {
+            width: 11.6%;
+            font-weight: 400;
+            color: #4B4947;
+            &:first-child {
+                width: 18%;
+            }
+        }
+        &__outer {
+            max-height: 500px;
+            overflow-y: scroll;
+        }
+ }
+}
+
+/* media query */
+@include mobile {
+    .mtr-dropdown-outer {
+        display: block;
+        gap: 20px;
+    }
+    .mtr-table2 {
+        padding: 30px 20px; 
+        max-width: 100%;
+        overflow-y: scroll;
+    }
 }
