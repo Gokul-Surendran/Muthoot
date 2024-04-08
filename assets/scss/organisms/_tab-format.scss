@@ -63,6 +63,10 @@
         }
     }
 
+    &__offr-doc {
+        padding-top: 32px;
+    }
+
     &__annual-rprt {
         display: flex;
         flex-wrap: wrap;
@@ -293,6 +297,13 @@
 
             .mtr-tab-tile {
                 width: calc(100% - 40px);
+            }
+        }
+
+        &__offr-doc {
+            padding-top: 32px;
+            .mtr-title__line {
+                left: 35%;
             }
         }
 
