@@ -7,7 +7,7 @@
         font-weight: 600;
     }
 
-    .accordion-button:not(.collapsed){
+    .accordion-button:not(.collapsed) {
         background-color: #fff !important;
         color: var(--clr-blue2) !important;
         font-weight: 600;
@@ -15,12 +15,29 @@
 
     .accordion-button::after {
         background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 2L11 20' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M20 11L2 11' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A");
-        
         background-size: 1rem;
     }
 
     .accordion-button:not(.collapsed)::after {
         background-image: url("data:image/svg+xml,%3Csvg width='22' height='4' viewBox='0 0 22 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 2L2 2' stroke='%230098DF' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A");
         transform: translateY(7px);
+    }
+
+    .accordion-header {
+        border-bottom: 1px solid rgba(199, 199, 199, 1);
+    }
+
+    .accordion-collapse {
+        padding-left: 35px;
+    }
+
+    .accordion-body {
+        a {
+            color: rgba(75, 73, 71, 1);
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
     }
 }
