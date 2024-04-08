@@ -1,9 +1,11 @@
 .mtr-key_tile {
     width: 100%;
     height: auto;
-    // border: 2px solid red;
+    border: 1px solid white;
     border-radius: 4px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 40px;
+    background-color: #fff;
     &__head {
         display: flex;
         align-items: center;
