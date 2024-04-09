@@ -21,20 +21,20 @@
         color: var(--clr-blue2) !important;
     }
 
-    &__gap,&__heading {
-        border: 0 !important;
-        td {
-            background-color: transparent !important;
-            border: 0 !important;
-        }
-    }
+    // &__gap,&__heading {
+    //     border: 0 !important;
+    //     td {
+    //         background-color: transparent !important;
+    //         border: 0 !important;
+    //     }
+    // }
 
     &__heading {
         font-size: 20px;
+        padding: 32px 0 16px 0;
+        padding-left: 0;
+        color: var(--clr-blue);
         td {
-            padding: 32px 0 16px 0 !important;
-            padding-left: 0 !important;
-            color: var(--clr-blue) !important;
         }
     }
 
