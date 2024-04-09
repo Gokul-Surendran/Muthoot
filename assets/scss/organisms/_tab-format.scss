@@ -290,6 +290,13 @@
             }
         }
 
+        &__bg-sec {
+            &.mtr-scrolltable {
+                min-width: 1000px;
+                overflow-x: scroll;
+            }
+        }
+
         &__finance-rslt {
             &-outer {
                 padding: 32px 24px;
