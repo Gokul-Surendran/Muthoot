@@ -81,9 +81,9 @@
         padding: 0 30px;
     }
 
-    p {
-        color: white;
-    }
+    // p {
+    //     color: white;
+    // }
 
     .nav-item {
         width: calc(25%);
@@ -109,12 +109,12 @@
 
     .nav-pills .nav-link {
         border-radius: 0;
-
     }
-
-    // .nav-pills .nav-link.active {
-    //     font-weight: bold;
-    // }
+    
+    .nav-pills .nav-link.active {
+        background-color: var(--clr-blue2);
+        font-weight: bold;
+    }
 
     .nav {
         justify-content: center;

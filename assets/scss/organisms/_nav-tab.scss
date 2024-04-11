@@ -14,7 +14,7 @@
    }
 
    &__copy {
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 400;
       padding-bottom: 8px;
       color: #4B4947;
@@ -23,6 +23,15 @@
 
    &__item {
       width: 30% !important;
+      button {
+         box-shadow: none;
+         &:hover {
+            box-shadow: none;
+         }
+         &::after {
+            background-color: transparent;
+         }
+      }
    }
 
    .nav-item {
@@ -89,7 +98,7 @@
 
    &__list {
       li {
-         font-size: 18px;
+         font-size: 16px;
          font-weight: 500;
          padding: 8px 0px;
          list-style-type: disc;

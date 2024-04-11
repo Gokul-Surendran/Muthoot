@@ -15,6 +15,13 @@
 
     &__navitem{
         width: 50% !important;
+        button {
+            box-shadow: none;
+            &::after {
+                background-color: transparent;
+            }
+        }
+        
     }
 
     &__navhead{
@@ -23,13 +30,14 @@
         color: #333333 !important;
         border: 0 !important;
         padding: .5rem 0rem;
+        
         &.active{
             background-color: transparent !important;
             color: #0098DF !important;
             border-bottom: 5px solid #0098DF !important;
         }
         &:hover{
-            color: #0098DF !important;
+            color: #333333 !important;
         }
     }
 

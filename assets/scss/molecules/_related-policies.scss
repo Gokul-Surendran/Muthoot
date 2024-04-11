@@ -8,7 +8,7 @@
   &__tittle {
     height: 50px;
     h1 {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 500;
       color: var(--clr-blue);
     }
@@ -18,7 +18,7 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
-    a {
+    button {
       color: var(--clr-white);
       background-color: var(--clr-blue2);
       padding: 8px 29px;
@@ -27,7 +27,7 @@
       font-size: 11px;
     }
     svg {
-      width: 45px;
+      width: 35px;
     }
   }
   &:hover {
@@ -35,7 +35,7 @@
     h1 {
       color: var(--clr-white);
     }
-    a {
+    button {
       background-color: var(--clr-white);
       color: var(--clr-blue2);
     }
