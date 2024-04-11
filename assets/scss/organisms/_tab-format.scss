@@ -3,7 +3,6 @@
         margin: 24px 0;
         width: 20%;
     }
-
     &__bg-sec {
         width: 100%;
         height: auto;
@@ -282,6 +281,10 @@
 
 @include mobile {
     .mtr-tabFormat {
+        &.mtr-scrolltable {
+            overflow-x: scroll;
+        }
+    
         &__year {
             padding-left: 24px;
 
@@ -291,9 +294,8 @@
         }
 
         &__bg-sec {
-            &.mtr-scrolltable {
+            &.mtr-scrollin {
                 min-width: 1000px;
-                overflow-x: scroll;
             }
         }
 
