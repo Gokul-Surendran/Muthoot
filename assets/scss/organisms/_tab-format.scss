@@ -69,13 +69,13 @@
     &__annual-rprt {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         align-items: center;
         padding: 32px;
 
         &-right {
-            width: calc(26% - 32px);
-            margin: 0 16px 50px;
+            width: calc(23% - 32px);
+            margin: 20px 26px 50px;
             position: relative;
 
 
@@ -318,7 +318,7 @@
 
         &__annual-rprt {
 
-            padding: 40px 10px;
+            padding: 16px 10px;
 
             &-right {
                 width: calc(90% - 16px);
