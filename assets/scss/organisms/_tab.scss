@@ -190,6 +190,10 @@
             min-height: 100px;
         }
 
+        .nav {
+            display: flex !important;
+        }
+
         .left-arrow {
             top: 40px;
         }
@@ -233,8 +237,7 @@
         .nav {
             justify-content: center;
             flex-wrap: nowrap;
-            // display: block;
-            // width: 400%;
+            display: block !important;
         }
 
         .mtr-tab-tile {

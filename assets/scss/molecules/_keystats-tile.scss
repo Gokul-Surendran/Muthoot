@@ -36,6 +36,12 @@
 
         p {
             font-size: 14px;
+            a {
+                color: #4B4947;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
             strong {
                 color: #4B4947;
             }

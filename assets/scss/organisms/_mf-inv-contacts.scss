@@ -9,11 +9,18 @@
 
         p {
             margin-bottom: 25px;
+            font-size: 15px;
+            line-height: 22px;
         }
     }
 
     &-part-2 {
         display: flex;
+
+        p {
+            font-size: 15px;
+            line-height: 25px;
+        }
 
         h1 {
             font-weight: 600;
@@ -27,6 +34,11 @@
 
     &-part-3 {
         display: flex;
+
+        p {
+            font-size: 15px;
+            line-height: 25px;
+        }
 
         h1 {
             font-weight: 600;
