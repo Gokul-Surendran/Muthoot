@@ -1,9 +1,16 @@
 .mtr-dropdown {
     padding: 20px 0;
+    display: flex;
+    align-items: center;
+
+    &__txtp{
+        margin-right: 24px;
+        font-weight: 400;
+    }
       
     
     select {
-        width: 100%;
+        // width: 100%;
         padding: 10px 20px;
         border-radius: 6px !important;
         height: 60px;
