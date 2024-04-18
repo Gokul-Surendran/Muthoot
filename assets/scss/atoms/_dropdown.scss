@@ -44,7 +44,7 @@
 @include mobile{
     .mtr-dropdown{
         &__txtp{
-            font-size: 14px;
+            font-size: 14px !important;
         }
     }
 }
