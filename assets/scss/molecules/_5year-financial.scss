@@ -205,6 +205,14 @@
 
             &__tbshort {
                 width: 7%;
+                p {
+                    font-size: 12px;
+                }
+            }
+            &__tblong {
+                p {
+                    font-size: 12px;
+                }
             }
         }
     }
