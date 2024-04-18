@@ -318,6 +318,7 @@
         &__finance-rslt {
             &-outer {
                 padding: 32px 24px;
+                justify-content: center;
             }
             .mtr-tab-tile {
                 width: calc(100% - 40px);
@@ -337,7 +338,7 @@
             padding: 16px 10px;
 
             &-right {
-                width: calc(90% - 16px);
+                width: calc(90% - 16px) !important;
                 margin: 0;
             }
         }
