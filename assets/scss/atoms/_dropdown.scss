@@ -4,8 +4,10 @@
     align-items: center;
 
     &__txtp{
-        margin-right: 24px;
+        margin-right: 15px;
+        font-size: 16px;
         font-weight: 400;
+        width: 100%;
     }
       
     
@@ -13,7 +15,7 @@
         // width: 100%;
         padding: 10px 20px;
         border-radius: 6px !important;
-        height: 60px;
+        height: 50px;
         color: #4B4947;
         font-size: 15px;
         font-weight: 400;
@@ -35,6 +37,14 @@
         option {
             width: 100%;
             font-size: 14px;
+        }
+    }
+}
+
+@include mobile{
+    .mtr-dropdown{
+        &__txtp{
+            font-size: 14px !important;
         }
     }
 }
