@@ -1,7 +1,10 @@
 .mtr-tabFormat {
+    // &.mtr-scrolltable {
+    //     margin-top: 60px;
+    // }
     .mtr-dropdown {
         margin: 24px 0;
-        width: 25%;
+        width: 35%;
     }
     &__bg-sec {
         width: 100%;
@@ -10,8 +13,11 @@
         background-repeat: no-repeat;
         background-position: center;
         padding: 32px 0;
-        margin-bottom: 50px;
+        // margin-bottom: 50px;
     }
+    // p {
+    //     font-size: 14px;
+    // }
 
     &__year {
         color: var(--clr-blue) !important;

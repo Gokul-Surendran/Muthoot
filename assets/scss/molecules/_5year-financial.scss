@@ -1,6 +1,10 @@
 
 .mtr-l5-Year {
     &--crd-rtng {
+        margin: 0;
+        .mtr-l5-Year__table {
+            height: 60px;
+        }
         &__short {
             width: 5%;
             font-size: 13px;
@@ -43,6 +47,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 6px;
             &:last-child {
                 border-right: 0;
             }
@@ -58,6 +63,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 6px;
             p {
                 font-size: 13px;
                 color: #4B4947;
@@ -84,7 +90,7 @@
             justify-content: center;
             p {
                 font-size: 16px;
-                color: var(--clr-white);
+                color: var(--clr-white) !important;
                 text-align: center;
                 font-weight: 600;
             }
@@ -183,6 +189,43 @@
         &::-webkit-scrollbar-thumb {
             background-color: darkgrey;
         } 
+    }
+}
+
+@include tablet {
+    .mtr-l5-Year {
+        &--crd-rtng {
+           
+            // .mtr-l5-Year__table {
+            //     height: 60px;
+            // }
+            &__short {
+                width: 7%;
+            }
+
+            &__tbshort {
+                width: 7%;
+            }
+        }
+    }
+}
+
+
+@include mobile {
+    .mtr-l5-Year {
+        &--crd-rtng {
+           
+            // .mtr-l5-Year__table {
+            //     height: 60px;
+            // }
+            &__short {
+                width: 7%;
+            }
+
+            &__tbshort {
+                width: 7%;
+            }
+        }
     }
 }
 
