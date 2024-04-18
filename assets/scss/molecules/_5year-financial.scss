@@ -215,6 +215,34 @@
                 }
             }
         }
+        &__header {
+        &-long {
+            p {
+                font-size: 14px;
+            }
+        }
+
+        &-short {
+            p {
+                font-size: 14px;
+
+            }
+        }
+    }
+        &__table {
+        &-long {
+            p {
+                font-size: 14px;
+            }
+        }
+
+        &-short {
+            p {
+                font-size: 14px;
+
+            }
+        }
+    }
     }
 }
 
