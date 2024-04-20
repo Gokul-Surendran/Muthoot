@@ -6,6 +6,12 @@
         box-shadow: none !important;
         font-weight: 600;
         font-size: 15px;
+        &:hover {
+            .accordion-button::after {
+                right: 9px;
+                top: 16px;
+            }
+        }
     }
 
     .accordion-button:not(.collapsed) {
@@ -17,11 +23,29 @@
     .accordion-button::after {
         background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 2L11 20' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M20 11L2 11' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A");
         background-size: 1rem;
+        right: 15px;
+        top: 16px;
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 20px;
+        height: 20px;
     }
 
     .accordion-button:not(.collapsed)::after {
         background-image: url("data:image/svg+xml,%3Csvg width='22' height='4' viewBox='0 0 22 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 2L2 2' stroke='%230098DF' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A");
-        transform: translateY(7px);
+        // transform: translateY(7px);
+        background-color: transparent;
+        background-size: 1rem;
+        right: 15px;
+        top: 22px;
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 20px;
+        height: 5px;
     }
 
     .accordion-header {

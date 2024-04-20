@@ -12,7 +12,11 @@
     .ubermenu-submenu-type-stack {
         padding: 0 !important;
     }
+}
 
-    
-
+//captcha 
+.mfn-center-btn.mtr-captcha {
+    iframe {
+        width: 100%;
+    }
 }
