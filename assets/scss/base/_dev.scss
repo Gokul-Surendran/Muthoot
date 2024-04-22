@@ -20,3 +20,82 @@
         width: 100%;
     }
 }
+.mtr-captcha {
+    &__out {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__sec {
+        display: flex;
+        flex-direction: column;
+        width: calc(50% - 32px);
+        margin: 0 16px;
+        input {
+            width: 100%;
+            // &:last-child {
+            //     width: auto;
+            // }
+        }
+        .wpcf7-submit{
+            width: auto;
+        }
+        .wpcf7-form-control-wrap.recaptcha {
+            &>span {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+        .column.col-half {
+            width: unset;
+        }
+        .invest-form-cta {
+            margin-left: 6px;
+        }
+        .column.col-captcha {
+            width: unset;
+        }
+        
+    }
+}
+
+@include mobile {
+    .mtr-captcha {
+        &__out {
+            flex-direction: column;
+        }
+    
+        &__sec {
+            display: flex;
+            flex-direction: column;
+            width: calc(50% - 32px);
+            margin: 0 16px;
+            input {
+                width: 100%;
+                // &:last-child {
+                //     width: auto;
+                // }
+            }
+            .wpcf7-submit{
+                width: auto;
+            }
+            .wpcf7-form-control-wrap.recaptcha {
+                &>span {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+            .column.col-half {
+                width: unset;
+            }
+            .invest-form-cta {
+                margin-left: 6px;
+            }
+            .column.col-captcha {
+                width: unset;
+            }
+            
+        }
+    }
+}
