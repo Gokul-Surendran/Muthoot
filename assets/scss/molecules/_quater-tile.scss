@@ -33,17 +33,22 @@
     }
 
     &__icon {
-        width: 20px;
+        width: 22px;
         height: 24px;
+        margin: 2px;
 
         svg {
             width: 100%;
             height: 100%;
             display: block;
+            &:hover {
+                transition: transform 0.2s ease-in-out;
+                transform: translateY(-1px);
+            }
         }
     }
 
-    a {
+    &__cpyimg {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -54,17 +59,16 @@
         }
 
         &:hover {
-            background-color: rgba(0, 152, 223, 1);
             color: #fff;
             transition: .4s ease-in;
 
             p {
-                color: #fff;
+                color: #000;
             }
 
             svg {
                 path {
-                    fill: #fff;
+                    fill: #015F74;
                 }
             }
         }
