@@ -7,10 +7,11 @@
 
     .nav-link {
         color: var(--clr-blue2);
-        min-height: 60px;
+        min-height: 75px;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 15px;
     }
 
     .tabs-sub {
@@ -39,25 +40,6 @@
             background-color: darkgrey;
         }
     }
-
-    // table,
-    // th,
-    // td {
-    //     border: 1px solid rgb(158, 158, 158);
-    //     border-collapse: collapse;
-    // }
-
-    // table {
-    //     background-color: #fff;
-    //     width: 100%;
-    // }
-
-    // th {
-    //     background-color: rgb(185, 180, 180);
-    //     color: black;
-    //     font-weight: 800;
-
-    // }
 
     &__tab2 {
         display: flex;
@@ -162,7 +144,7 @@
         order: 1;
         position: absolute;
         left: 8px;
-        top: 18px;
+        top: 27px;
 
         img {
             transform: rotate(180deg);
@@ -174,7 +156,7 @@
         order: 2;
         position: absolute;
         right: 8px;
-        top: 18px;
+        top: 27px;
         height: 20px;
         width: 20px;
 

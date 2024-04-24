@@ -8,12 +8,12 @@
     &__para {
         width: 100%;
         border: 1px solid white;
-        padding: 50px 40px 50px 20%;
+        padding: 30px 40px 30px 20%;
 
      
         &-quotes {
             position: absolute;
-            top: -15px;
+            top: -3px;
             left: -35px;
             width: 30px;
             height: auto;
@@ -25,8 +25,8 @@
 
             &--rev {
                 transform: rotateY(180deg);
-                bottom: -30px;
-                right: -35px;
+                bottom: -18px;
+                right: -37px;
                 top: inherit;
                 left: inherit;
             }
