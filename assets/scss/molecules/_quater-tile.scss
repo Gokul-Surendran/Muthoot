@@ -56,22 +56,23 @@
 
         p {
             font-size: 14px;
+            padding-right: 4px;
         }
 
-        &:hover {
-            color: #fff;
-            transition: .4s ease-in;
+        // &:hover {
+        //     color: #fff;
+        //     transition: .4s ease-in;
 
-            p {
-                color: #000;
-            }
+        //     p {
+        //         color: #000;
+        //     }
 
-            svg {
-                path {
-                    fill: #015F74;
-                }
-            }
-        }
+        //     svg {
+        //         path {
+        //             fill: #015F74;
+        //         }
+        //     }
+        // }
 
         p {
             color: var(--clr-black);
