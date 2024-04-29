@@ -164,6 +164,38 @@
             width: 18px;
         }
     }
+
+    .mtr-scrolltable{
+        &__dwnld{
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 36px;
+            position: relative;
+            &::after{
+                background-color: black;
+                height: 1px;
+                width: 9%;
+                content: "";
+                position: absolute;
+                bottom: -4px
+            }
+        }
+
+        &__dwnldbtn{
+            margin-right: 8px;
+            color: var(--clr-blue2);
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        &__dwnldicn{
+            width: 15px;
+            height: 15px;
+            svg{
+                margin-bottom: 6px;
+            }
+        }
+    }
 }
 
 
