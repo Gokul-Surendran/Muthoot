@@ -12,6 +12,14 @@
         }
     }
 
+    // &__opt {
+    //     &.mtr-auto {
+    //         select {
+    //             width: auto;
+    //         }
+    //     }
+    // }
+
     &__txtp{
         margin-right: 15px;
         font-size: 16px;
@@ -21,7 +29,7 @@
       
     
     select {
-        // width: 100%;
+        width: auto;
         padding: 10px 20px;
         border-radius: 6px !important;
         height: 50px;
@@ -50,10 +58,24 @@
     }
 }
 
+.mtr-dropdown-out {
+    display: flex;
+    .mtr-dropdown {
+        width: auto !important;
+    }
+}
+
 @include mobile{
     .mtr-dropdown{
         &__txtp{
             font-size: 14px !important;
+        }
+    }
+    .mtr-dropdown-out {
+        flex-direction: column;
+        .mtr-dropdown form {
+            flex-direction: column;
+            align-items: flex-start;
         }
     }
 }
