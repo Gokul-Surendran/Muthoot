@@ -1,3 +1,25 @@
+//PDF OPEN IN SAME WINDOW
+document.addEventListener("DOMContentLoaded", function() {
+    var links = document.querySelectorAll('a[target="_blank"]');
+    var previousWindow = null;
+
+    links.forEach(function(link) {
+        link.addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the default action of opening the link
+            var url = this.getAttribute("href");
+            var win = window.open(url, '_blank');
+            if (win) {
+                win.focus();
+                if (previousWindow && !previousWindow.closed) {
+                    previousWindow.close();
+                }
+                previousWindow = win;
+            } else {
+                alert("Popup blocked! Please allow popups for this site.");
+            }
+        });
+    });
+});
 const tabsContainer = document.getElementById('pills-tab');
 const tabs = tabsContainer.querySelectorAll('.tab');
 const prevArrow = document.getElementById('prevArrow');
