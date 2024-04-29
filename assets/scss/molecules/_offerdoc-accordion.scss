@@ -1,4 +1,9 @@
 .mt-offerdoc-accordion {
+    &--qtile {
+        .accordion-collapse {
+            padding-left: 0px !important;
+        }
+    }
     margin: 16px 32px;
     &__acc-btn {
         color: #fff !important;
@@ -64,6 +69,13 @@
 
         a:hover {
             text-decoration: underline;
+        }
+    }
+}
+@include mobile {
+    .mt-offerdoc-accordion { 
+        .accordion-body { 
+            padding: 0px;
         }
     }
 }
