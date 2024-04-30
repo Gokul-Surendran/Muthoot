@@ -53,6 +53,12 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px 15px;
+        &.mtr-blank {
+            min-height: 40px;
+            p,a {
+                display: none;
+            }
+        }
 
         p {
             font-size: 14px;

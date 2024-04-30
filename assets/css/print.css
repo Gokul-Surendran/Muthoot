@@ -6,3 +6,20 @@
 .mtr-l5-Year__print {
   display: none;
 }
+
+body * {
+  visibility: hidden;
+}
+
+#table-container, #table-container * {
+  visibility: visible;
+}
+
+/* Table container styles */
+#table-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}

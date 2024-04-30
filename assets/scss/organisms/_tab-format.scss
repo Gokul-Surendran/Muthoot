@@ -14,6 +14,10 @@
         background-repeat: no-repeat;
         background-position: center;
         padding: 32px 0;
+
+        &.mtr-space {
+            padding: 32px;
+        }
         // margin-bottom: 50px;
     }
     // p {
@@ -39,6 +43,7 @@
     }
 
     &__finance-rslt {
+        padding: 32px;
         &-outer {
             padding: 32px 16px;
             display: flex;

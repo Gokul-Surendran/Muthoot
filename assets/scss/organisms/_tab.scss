@@ -170,27 +170,37 @@
             display: flex;
             justify-content: flex-end;
             margin-right: 36px;
-            position: relative;
-            &::after{
-                background-color: black;
-                height: 1px;
-                width: 9%;
-                content: "";
-                position: absolute;
-                bottom: -4px
-            }
         }
 
         &__dwnldbtn{
+            display: flex;
             margin-right: 8px;
             color: var(--clr-blue2);
             font-size: 14px;
             font-weight: 600;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                background-color: var(--clr-blue2);
+                height: 2px;
+                width: 20%;
+                bottom: -8px;
+                left: 0;
+                transition: 0.3s;
+            }
+            &:hover {
+                &::after {
+                    width: 100%;
+                    transition: 0.3s;
+                }
+            }
         }
 
         &__dwnldicn{
             width: 15px;
             height: 15px;
+            margin-left: 8px;
             svg{
                 margin-bottom: 6px;
             }
@@ -263,3 +273,4 @@
     }
 
 }
+

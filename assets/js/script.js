@@ -20,6 +20,43 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+//PDF download 
+const options = {
+    margin: 0.5,
+    filename: 'invoice.pdf',
+    image: {
+      type: 'jpeg',
+      quality: 500
+    },
+    html2canvas: {
+      scale: 1
+    },
+    jsPDF: {
+      unit: 'in',
+      format: 'letter',
+      orientation: 'portrait'
+    }
+  }
+
+  $('.mtr-scrolltable__dwnldbtn').click(function (e) {
+    e.preventDefault();
+    const element = document.getElementById('invoice');
+    html2pdf().from(element).set(options).save();
+  });
+
+
+  function printDiv(divName) {
+    var printContents = document.getElementById(divName).innerHTML;
+    var originalContents = document.body.innerHTML;
+
+    document.body.innerHTML = printContents;
+
+    window.print();
+
+    document.body.innerHTML = originalContents;
+  }
+
 const tabsContainer = document.getElementById('pills-tab');
 const tabs = tabsContainer.querySelectorAll('.tab');
 const prevArrow = document.getElementById('prevArrow');
@@ -138,3 +175,4 @@ window.addEventListener('scroll', function () {
         headers.classList.remove('sticky-header-scroll');
     }
 });
+
