@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../assets/css/slick-theme.css">
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/print.css" media="print" />
   <!-- styles -->
   <title>Document</title>
 </head>
@@ -1218,7 +1219,7 @@
               <div class="mtr-tabFormat mtr-scrolltable">
                 <div class="content-wrapper">
                   <div class="mtr-scrolltable__dwnld">
-                    <a class="mtr-scrolltable__dwnldbtn">
+                    <a onclick="printTable()" class="mtr-scrolltable__dwnldbtn">
                       <p>Download</p>
                       <div class="mtr-scrolltable__dwnldicn">
                         <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1240,7 +1241,7 @@
                   </div>
                   <div style="background-image: url(../assets/images/tab-format.png);"
                     class="mtr-tabFormat__bg-sec mtr-scrollin">
-              <div class="mtr-l5-Year mtr-l5-Year--crd-rtng">
+              <div id="table-container" class="mtr-l5-Year mtr-l5-Year--crd-rtng">
                 <div class="mtr-l5-Year__header">
                   <div class="mtr-l5-Year--crd-rtng__short">
                     <p>Sr.No.</p>
@@ -3044,6 +3045,11 @@
   <script src="../assets/js/slick.min.js"></script>
   <script src="../assets/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/script.js"></script>
+  <script>
+    function printTable() {
+      window.print();
+    }
+  </script>
   <!-- scripts -->
 </body>
 

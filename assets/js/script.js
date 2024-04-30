@@ -1,61 +1,61 @@
 //PDF OPEN IN SAME WINDOW
-document.addEventListener("DOMContentLoaded", function() {
-    var links = document.querySelectorAll('a[target="_blank"]');
-    var previousWindow = null;
+// document.addEventListener("DOMContentLoaded", function() {
+//     var links = document.querySelectorAll('a[target="_blank"]');
+//     var previousWindow = null;
 
-    links.forEach(function(link) {
-        link.addEventListener("click", function(event) {
-            event.preventDefault(); // Prevent the default action of opening the link
-            var url = this.getAttribute("href");
-            var win = window.open(url, '_blank');
-            if (win) {
-                win.focus();
-                if (previousWindow && !previousWindow.closed) {
-                    previousWindow.close();
-                }
-                previousWindow = win;
-            } else {
-                alert("Popup blocked! Please allow popups for this site.");
-            }
-        });
-    });
-});
+//     links.forEach(function(link) {
+//         link.addEventListener("click", function(event) {
+//             event.preventDefault(); // Prevent the default action of opening the link
+//             var url = this.getAttribute("href");
+//             var win = window.open(url, '_blank');
+//             if (win) {
+//                 win.focus();
+//                 if (previousWindow && !previousWindow.closed) {
+//                     previousWindow.close();
+//                 }
+//                 previousWindow = win;
+//             } else {
+//                 alert("Popup blocked! Please allow popups for this site.");
+//             }
+//         });
+//     });
+// });
 
 //PDF download 
-const options = {
-    margin: 0.5,
-    filename: 'invoice.pdf',
-    image: {
-      type: 'jpeg',
-      quality: 500
-    },
-    html2canvas: {
-      scale: 1
-    },
-    jsPDF: {
-      unit: 'in',
-      format: 'letter',
-      orientation: 'portrait'
-    }
-  }
+// const options = {
+//     margin: 0.5,
+//     filename: 'invoice.pdf',
+//     image: {
+//       type: 'jpeg',
+//       quality: 500
+//     },
+//     html2canvas: {
+//       scale: 1
+//     },
+//     jsPDF: {
+//       unit: 'in',
+//       format: 'letter',
+//       orientation: 'portrait'
+//     }
+//   }
 
-  $('.mtr-scrolltable__dwnldbtn').click(function (e) {
-    e.preventDefault();
-    const element = document.getElementById('invoice');
-    html2pdf().from(element).set(options).save();
-  });
+//   $('.mtr-scrolltable__dwnldbtn').click(function (e) {
+//     e.preventDefault();
+//     const element = document.getElementById('invoice');
+//     html2pdf().from(element).set(options).save();
+//   });
 
 
-  function printDiv(divName) {
-    var printContents = document.getElementById(divName).innerHTML;
-    var originalContents = document.body.innerHTML;
+//   function printDiv(divName) {
+//     var printContents = document.getElementById(divName).innerHTML;
+//     var originalContents = document.body.innerHTML;
 
-    document.body.innerHTML = printContents;
+//     document.body.innerHTML = printContents;
 
-    window.print();
+//     window.print();
 
-    document.body.innerHTML = originalContents;
-  }
+//     document.body.innerHTML = originalContents;
+//   }
 
 const tabsContainer = document.getElementById('pills-tab');
 const tabs = tabsContainer.querySelectorAll('.tab');
