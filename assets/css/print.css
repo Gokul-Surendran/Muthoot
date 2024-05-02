@@ -15,7 +15,6 @@ body * {
   visibility: visible;
 }
 
-/* Table container styles */
 #table-container {
   position: absolute;
   left: 0;

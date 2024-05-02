@@ -125,6 +125,11 @@
         font-size: 16px;
         font-weight: 600;
         padding-left: 24px;
+        &.nospace {
+            padding: 0;
+            margin-bottom: 10px;
+            text-align: center;
+        }
     }
 
     &__table {
@@ -179,6 +184,7 @@
     &__table-set {
         max-height: 350px;
         overflow-y: scroll;
+        border-bottom: 1px solid #014565;
         &::-webkit-scrollbar {
             width: 3px;
         }
