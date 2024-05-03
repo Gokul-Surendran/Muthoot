@@ -244,6 +244,14 @@
     }
 }
 
+// new module of annual reports
+.mtr-annualtable{
+    .mtr-title{
+        padding: 30px 0px 16px;
+        font-size: 24px;
+    }
+}
+
 
 @include tablet {
     .mtr-tabs {
