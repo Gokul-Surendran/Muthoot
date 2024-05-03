@@ -241,6 +241,10 @@
             border-radius: 6px;
             padding: 24px;
         }
+
+        button:after {
+            content: unset;
+          }
     }
 }
 
