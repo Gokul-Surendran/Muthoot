@@ -5,6 +5,12 @@
         padding: 40px 0;
     }
 
+    .mtr-title--font30 {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
     .nav-link {
         color: var(--clr-blue2);
         min-height: 75px;
