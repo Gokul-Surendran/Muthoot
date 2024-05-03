@@ -30,11 +30,3 @@ body * {
 .avoid-page-break {
   page-break-inside: avoid;
 }
-
-.page-break-before {
-  page-break-before: always;
-}
-
-.page-break-after {
-  page-break-after: always;
-}
