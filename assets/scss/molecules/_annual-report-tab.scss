@@ -1,0 +1,38 @@
+.mtr-art {
+   margin: 32px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 12px;
+   border: 1px solid #c7c7c7;
+   &.active {
+      background-color: #f5f5f5;
+   }  
+   &__txt {
+      font-size: 16px;
+      width: 80%;
+   }
+   &__dwnld {
+      display: flex;
+      align-items: center;
+      border-radius: 20px;
+      padding: 8px 12px;
+      background-color: #0098DF;
+      button {
+         font-size: 14px;
+         color: #fff;
+      }
+   }
+}
+@include mobile {
+   .mtr-art {
+      &__txt {
+         font-size: 14px;
+      }
+      &__dwnld {
+         button {
+            font-size: 12px;
+         }
+      }
+   }
+}
