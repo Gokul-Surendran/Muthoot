@@ -1,0 +1,42 @@
+.mtr-art {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 12px;
+   border-top: 1px solid #c7c7c7;
+   border-right: 1px solid #c7c7c7;
+   border-left: 1px solid #c7c7c7;
+   &:last-child {
+      border: 1px solid #c7c7c7;
+   }
+   &.active {
+      background-color: #e7f6fc7a;
+   }  
+   &__txt {
+      font-size: 15px;
+      width: 80%;
+   }
+   &__dwnld {
+      display: flex;
+      align-items: center;
+      border-radius: 20px;
+      padding: 7px 10px;
+      background-color: #0098DF;
+      button {
+         font-size: 13px;
+         color: #fff;
+      }
+   }
+}
+@include mobile {
+   .mtr-art {
+      &__txt {
+         font-size: 14px;
+      }
+      &__dwnld {
+         button {
+            font-size: 12px;
+         }
+      }
+   }
+}
