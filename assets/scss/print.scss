@@ -8,3 +8,22 @@
 .tabs-sub{
     display: none;
 }
+body * {
+    visibility: hidden;
+  }
+  
+  #table-container, #table-container * {
+    visibility: visible;
+  }
+  
+  #table-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 95%;
+    height: 100%;
+  }
+
+  .avoid-page-break {
+    page-break-inside: avoid;
+  }

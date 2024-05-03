@@ -7,6 +7,10 @@
   display: none;
 }
 
+.tabs-sub {
+  display: none;
+}
+
 body * {
   visibility: hidden;
 }
@@ -21,4 +25,16 @@ body * {
   top: 0;
   width: 95%;
   height: 100%;
+}
+
+.avoid-page-break {
+  page-break-inside: avoid;
+}
+
+.page-break-before {
+  page-break-before: always;
+}
+
+.page-break-after {
+  page-break-after: always;
 }
