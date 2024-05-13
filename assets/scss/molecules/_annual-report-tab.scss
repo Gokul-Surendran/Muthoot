@@ -5,6 +5,9 @@
    padding: 12px;
    border: 1px solid #c7c7c7;
    border-bottom: 0;
+   &--center {
+      justify-content: center;
+   }
    &:last-child {
       border-bottom: 1px solid #c7c7c7;
    }
