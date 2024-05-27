@@ -232,7 +232,7 @@
             margin: 0 6px;
         }
         .nav-item.docs {
-            width: calc(12% - 12px);
+            width: calc(17% - 12px);
         }
         .nav-link {
             border: 1px solid var(--clr-blue2);
@@ -282,7 +282,7 @@
                         width: 5px;
                         height: 5px;
                         border-radius: 50%;
-                        background-color: #000B2B;
+                        background-color: #0098DF;
                     }
                 }
                 
@@ -325,7 +325,7 @@
                 width: calc(10% - 12px);
             }
             .nav-item.docs {
-                width: calc(20% - 12px);
+                width: calc(30% - 12px);
             }
         }
         
@@ -383,7 +383,7 @@
                 margin-bottom: 12px;
             }
             .nav-item.docs {
-                width: calc(50% - 12px);
+                width: calc(100% - 12px);
             }
         }
     }
