@@ -5,6 +5,9 @@
    padding: 12px;
    border: 1px solid #c7c7c7;
    border-bottom: 0;
+   &--center {
+      justify-content: center;
+   }
    &:last-child {
       border-bottom: 1px solid #c7c7c7;
    }
@@ -21,14 +24,15 @@
       border-radius: 20px;
       padding: 10px 14px;
       background-color: #0098DF;
+      img {
+         width: 12px;
+         height: 12px;
+      }
       span {
          font-size: 13px;
+         margin-left: 5px;
          color: #fff;
          margin-left: 6px;
-      }
-      img {
-         width: 10px;
-         height: 10px;
       }
    }
 }
