@@ -231,11 +231,17 @@
             width: calc(7% - 12px);
             margin: 0 6px;
         }
+        .nav-item.docs {
+            width: calc(12% - 12px);
+        }
         .nav-link {
             border: 1px solid var(--clr-blue2);
             min-height: auto;
             padding: 10px;
             border-radius: 6px;
+        }
+        .nav-link::after {
+            content: unset;
         }
         .nav-link.active {
             background-color: var(--clr-blue2);
@@ -282,6 +288,9 @@
         .mtr-financialtab {
             .nav-item {
                 width: calc(10% - 12px);
+            }
+            .nav-item.docs {
+                width: calc(20% - 12px);
             }
         }
         
@@ -337,6 +346,9 @@
             .nav-item {
                 width: calc(33.3% - 12px);
                 margin-bottom: 12px;
+            }
+            .nav-item.docs {
+                width: calc(50% - 12px);
             }
         }
     }
